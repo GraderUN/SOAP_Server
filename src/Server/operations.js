@@ -1,43 +1,87 @@
-const client = require('./request_ms');
+const gql = require("graphql-tag");
+const ApolloClient = require("apollo-client").ApolloClient;
+const fetch = require("node-fetch");
+const createHttpLink = require("apollo-link-http").createHttpLink;
+const InMemoryCache = require("apollo-cache-inmemory").InMemoryCache;
+
+const httpLink = createHttpLink({
+  uri: "http://localhost:5000/",
+  fetch: fetch,
+});
+
+const client = new ApolloClient({
+  link: httpLink,
+  cache: new InMemoryCache(),
+});
 
 async function prueba(args) {
-    return "hola";
+  return "adios";
 }
-async function getStudents(args){
-    /*client.query({
-        query: gql`
-          query GetRates {
-            rates(currency: "USD") {
-              currency
-            }
-          }
-        `
-      }).then(
-        result =>{
-            console.log(result);
-            return result;
-        }
-        );*/
-        return "correcto";
+async function getStudents(args) {
+  let res = [];
+  const query = gql`
+    query allEstudiantes{
+      allEstudiantes {
+        id
+        nombre
+        apellido
+      }
+    }
+  `;
+
+  try {
+    const result = await client.query({
+      query,
+    });
+    result.data.allEstudiantes.forEach((element) => {
+      let temp = {
+        id: element.id,
+        nombre: element.nombre,
+        apellido: element.apellido
+      };
+      res.push(temp);
+    });
+
+    return res;
+  } catch (err) {
+    console.log(err);
+    res.sendStatus(500).send(JSON.stringify(err));
+  }
 }
 
-async function getAdministratives() {
-    let response = await client.getAllAdmins();
-    let tag = [];
-    if(response.status == 200) {
-        response.body.forEach(element => {
-            tag.push({
+async function getAdministratives() {1
+    let res = [];
+    const query = gql`
+        query allAdministrativos{
+            allAdministrativos {
+                id
+                nombre
+                apellido
+                edad
+            }
+        }
+    `;
+
+    try {
+        const result = await client.query({
+            query,
+        });
+        result.data.allAdministrativos.forEach((element) => {
+            let temp = {
                 id: element.id,
                 nombre: element.nombre,
                 apellido: element.apellido,
                 edad: element.edad
-            });
+            };
+            res.push(temp);
         });
+
+        return res;
+    } catch (err) {
+        console.log(err);
+        res.sendStatus(500).send(JSON.stringify(err));
     }
 
-    return{
-        tag: tag
-    }
 }
 
 module.exports = {

@@ -67,11 +67,21 @@
          </s:element>
 
          <s:element name="allAdministrativesResponse">
-            <s:complexType>
-               <s:sequence>
-                  <s:element maxOccurs="unbounded" name="url" type="s:string"/>
-               </s:sequence>
-            </s:complexType>
+            <xsd:complexType name='AdministrativesList'>
+               <xsd:complexContent mixed='false'>
+                  <xsd:restriction base='soapenc:Array'>
+                     <xsd:attribute wsdl:arrayType='AdministrativesList[]' ref='soapenc:arrayType' />
+                  </xsd:restriction>
+               </xsd:complexContent>
+            </xsd:complexType>
+            <xsd:complexType name='teacher'>
+               <xsd:all>
+                  <xsd:element minOccurs='0' maxOccurs='1' name='id' type='xsd:id'/>
+                  <xsd:element minOccurs='0' maxOccurs='1' name='nombre' type='xsd:string'/>
+                  <xsd:element minOccurs='0' maxOccurs='1' name='apellido' type='xsd:string'/>
+                  <xsd:element minOccurs='0' maxOccurs='1' name='edad' type='xsd:int'/>
+               </xsd:all>
+            </xsd:complexType>
          </s:element>
       </s:schema>
 

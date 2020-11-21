@@ -49,6 +49,39 @@ async function getStudents(args) {
   }
 }
 
+async function getTeachers(args) {
+  let res = [];
+  const query = gql`
+    query allProfesores{
+      allProfesores {
+        id
+        nombre
+        apellido
+      }
+    }
+  `;
+
+  try {
+    const result = await client.query({
+      query,
+    });
+    console.log(result.data);
+    result.data.allProfesores.forEach((element) => {
+      let temp = {
+        id: element.id,
+        nombre: element.nombre,
+        apellido: element.apellido
+      };
+      res.push(temp);
+    });
+
+    return res;
+  } catch (err) {
+    console.log(err);
+    res.sendStatus(500).send(JSON.stringify(err));
+  }
+}
+
 async function getAdministratives() {1
     let res = [];
     const query = gql`
@@ -85,7 +118,8 @@ async function getAdministratives() {1
 }
 
 module.exports = {
-    prueba,
-    getStudents,
+  prueba,
+  getStudents,
+  getTeachers,
     getAdministratives
-}
+};

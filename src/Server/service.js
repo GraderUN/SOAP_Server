@@ -5,6 +5,7 @@ var myService = {
         functions: {
             tags: operations.prueba,
             students: operations.getStudents,
+            teachers: operations.getTeachers,
             administratives: operations.getAdministratives
         }
     }

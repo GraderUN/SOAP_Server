@@ -56,6 +56,30 @@
                </xsd:all>
             </xsd:complexType>
          </s:element>
+
+         <s:element name="allTeachersRequest">
+            <s:complexType>
+               <s:sequence>
+               </s:sequence>
+            </s:complexType>
+         </s:element>
+
+         <s:element name="allTeachersResponse">
+            <xsd:complexType name='teacherList'>
+               <xsd:complexContent mixed='false'>
+                  <xsd:restriction base='soapenc:Array'>
+                     <xsd:attribute wsdl:arrayType='teacherList[]' ref='soapenc:arrayType' />
+                  </xsd:restriction>
+               </xsd:complexContent>
+            </xsd:complexType>
+            <xsd:complexType name='teacher'>
+               <xsd:all>
+                  <xsd:element minOccurs='0' maxOccurs='1' name='id' type='xsd:id'/>
+                  <xsd:element minOccurs='0' maxOccurs='1' name='nombre' type='xsd:string'/>
+                  <xsd:element minOccurs='0' maxOccurs='1' name='apellido' type='xsd:string'/>
+               </xsd:all>
+            </xsd:complexType>
+         </s:element>
       </s:schema>
 
    </wsdl:types>
@@ -78,6 +102,11 @@
          <wsdl:input message = "tns:studentsRequest"/>
          <wsdl:output message = "tns:studentsResponse"/>
       </wsdl:operation>
+
+      <wsdl:operation name = "teachers">
+         <wsdl:input message = "tns:teachersRequest"/>
+         <wsdl:output message = "tns:teachersResponse"/>
+      </wsdl:operation>
    </wsdl:portType>
 
    <!--Definitions Students-->
@@ -87,6 +116,15 @@
 
    <wsdl:message name = "studentsResponse">
       <wsdl:part name="parameters" element="tns:allStudentsResponse"/>
+   </wsdl:message>
+
+   <!--Definitions Teachers-->
+   <wsdl:message name = "teachersRequest">
+      <wsdl:part name="parameters" element="tns:allTeachersRequest"/>
+   </wsdl:message>
+
+   <wsdl:message name = "teachersResponse">
+      <wsdl:part name="parameters" element="tns:allTeachersResponse"/>
    </wsdl:message>
 
 
@@ -108,6 +146,18 @@
       <!--Function Students-->
       <wsdl:operation name = "students">
          <soap:operation soapAction = "students" style="document"/>
+
+         <wsdl:input>
+            <soap:body use="literal"/>
+         </wsdl:input>
+         <wsdl:output>
+            <soap:body use="literal"/>
+         </wsdl:output>
+      </wsdl:operation>
+
+      <!--Function Teachers-->
+      <wsdl:operation name = "teachers">
+         <soap:operation soapAction = "teachers" style="document"/>
 
          <wsdl:input>
             <soap:body use="literal"/>

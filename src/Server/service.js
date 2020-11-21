@@ -4,7 +4,8 @@ var myService = {
     ss_2e: {
         functions: {
             tags: operations.prueba,
-            students: operations.getStudents
+            students: operations.getStudents,
+            teachers: operations.getTeachers
         }
     }
 }

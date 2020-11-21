@@ -1,7 +1,10 @@
 async function prueba(args) {
     return "hola";
 }
-
-module.exports = {
-    prueba
+async function getStudents(){
+    return "funcion correcta";
+}
+module.exports = { 
+    prueba,
+    getStudents
 }

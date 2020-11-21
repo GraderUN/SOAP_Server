@@ -24,7 +24,21 @@
             </s:sequence>
          </s:complexType>
          </s:element>
+
+         <s:element name="allStudentsRequest">
+         <s:complexType>
+            <s:sequence>
+            </s:sequence>
+         </s:complexType>
+         </s:element>
          
+         <s:element name="allStudentsResponse">
+         <s:complexType>
+            <s:sequence>
+               <s:element maxOccurs="unbounded" name="tag"/>
+            </s:sequence>
+         </s:complexType>
+         </s:element>
       </s:schema>
 
    </wsdl:types>
@@ -44,11 +58,42 @@
       </wsdl:operation>
    </wsdl:portType>
 
+   <!--Definitions Students-->
+   <wsdl:message name = "studentsRequest">   
+      <wsdl:part name="parameters" element="tns:allStudentsRequest"/>
+   </wsdl:message>
+
+   <wsdl:message name = "studentsResponse">
+      <wsdl:part name="parameters" element="tns:allStudentsResponse"/>
+   </wsdl:message>
+
+
+   <wsdl:portType name = "port">
+      <wsdl:operation name = "students">
+         <wsdl:input message = "tns:studentsRequest"/>
+         <wsdl:output message = "tns:studentsResponse"/>
+      </wsdl:operation>
+   </wsdl:portType>
+
+
+   <!--General Binding-->
    <wsdl:binding name = "ss_2e_Binding" type = "tns:port">
       <soap:binding transport="http://schemas.xmlsoap.org/soap/http"/>
 
       <wsdl:operation name = "tags">
          <soap:operation soapAction = "tags" style="document"/>
+
+         <wsdl:input>
+            <soap:body use="literal"/>
+         </wsdl:input>
+         <wsdl:output>
+            <soap:body use="literal"/>
+         </wsdl:output>
+      </wsdl:operation>
+
+      <!--Function Students-->
+      <wsdl:operation name = "students">
+         <soap:operation soapAction = "students" style="document"/>
 
          <wsdl:input>
             <soap:body use="literal"/>

@@ -14,9 +14,6 @@ const client = new ApolloClient({
   cache: new InMemoryCache(),
 });
 
-async function prueba(args) {
-  return "adios";
-}
 async function getStudents(args) {
   let res = [];
   const query = gql`
@@ -118,7 +115,6 @@ async function getAdministratives() {1
 }
 
 module.exports = {
-  prueba,
   getStudents,
   getTeachers,
     getAdministratives

@@ -19,7 +19,15 @@
     <select />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="2f58dad4-6f32-4317-a90c-68e5cd335ad8" name="Default Changelist" comment="Administrativos working" />
+    <list default="true" id="2f58dad4-6f32-4317-a90c-68e5cd335ad8" name="Default Changelist" comment="Nothing">
+      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/Server/index.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/Server/index.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/Server/operations.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/Server/operations.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/Server/request_ms.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/Server/service.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/Server/service.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/Server/ss_2e_service.wsdl" beforeDir="false" afterPath="$PROJECT_DIR$/src/Server/ss_2e_service.wsdl" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/index.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/index.js" afterDir="false" />
+    </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
     <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
@@ -55,6 +63,8 @@
       <updated>1605935666107</updated>
       <workItem from="1605935667352" duration="8191000" />
       <workItem from="1605990346050" duration="4024000" />
+      <workItem from="1605996354298" duration="153000" />
+      <workItem from="1605996763432" duration="314000" />
     </task>
     <task id="LOCAL-00001" summary="Trying gateway">
       <created>1605940799784</created>
@@ -84,7 +94,14 @@
       <option name="project" value="LOCAL" />
       <updated>1605992938747</updated>
     </task>
-    <option name="localTasksCounter" value="5" />
+    <task id="LOCAL-00005" summary="Nothing">
+      <created>1605996402353</created>
+      <option name="number" value="00005" />
+      <option name="presentableId" value="LOCAL-00005" />
+      <option name="project" value="LOCAL" />
+      <updated>1605996402353</updated>
+    </task>
+    <option name="localTasksCounter" value="6" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -107,7 +124,8 @@
     <MESSAGE value="something" />
     <MESSAGE value="some proves" />
     <MESSAGE value="Administrativos working" />
-    <option name="LAST_COMMIT_MESSAGE" value="Administrativos working" />
+    <MESSAGE value="Nothing" />
+    <option name="LAST_COMMIT_MESSAGE" value="Nothing" />
   </component>
   <component name="WindowStateProjectService">
     <state x="136" y="202" key="#Inspections" timestamp="1605938746900">
@@ -134,26 +152,26 @@
       <screen x="0" y="0" width="1920" height="1040" />
     </state>
     <state width="1300" height="281" key="GridCell.Tab.0.right/0.0.1920.1040/1920.0.1920.1040@0.0.1920.1040" timestamp="1605994722553" />
-    <state x="214" y="109" key="MergeDialog" timestamp="1605991329824">
+    <state x="214" y="109" key="MergeDialog" timestamp="1605996458055">
       <screen x="0" y="0" width="1920" height="1040" />
     </state>
-    <state x="214" y="109" key="MergeDialog/0.0.1920.1040/1920.0.1920.1040@0.0.1920.1040" timestamp="1605991329824" />
-    <state x="896" y="285" key="MultipleFileMergeDialog" timestamp="1605991329831">
+    <state x="214" y="109" key="MergeDialog/0.0.1920.1040/1920.0.1920.1040@0.0.1920.1040" timestamp="1605996458055" />
+    <state x="596" y="325" key="MultipleFileMergeDialog" timestamp="1605996458062">
       <screen x="0" y="0" width="1920" height="1040" />
     </state>
-    <state x="896" y="285" key="MultipleFileMergeDialog/0.0.1920.1040/1920.0.1920.1040@0.0.1920.1040" timestamp="1605991329831" />
-    <state x="552" y="253" key="Vcs.Push.Dialog.v2" timestamp="1605993222302">
+    <state x="596" y="325" key="MultipleFileMergeDialog/0.0.1920.1040/1920.0.1920.1040@0.0.1920.1040" timestamp="1605996458062" />
+    <state x="552" y="253" key="Vcs.Push.Dialog.v2" timestamp="1605996468145">
       <screen x="0" y="0" width="1920" height="1040" />
     </state>
-    <state x="552" y="253" key="Vcs.Push.Dialog.v2/0.0.1920.1040/1920.0.1920.1040@0.0.1920.1040" timestamp="1605993222302" />
+    <state x="552" y="253" key="Vcs.Push.Dialog.v2/0.0.1920.1040/1920.0.1920.1040@0.0.1920.1040" timestamp="1605996468145" />
     <state x="86" y="130" key="com.intellij.openapi.editor.actions.MultiplePasteAction$ClipboardContentChooser" timestamp="1605939138594">
       <screen x="0" y="0" width="1920" height="1040" />
     </state>
     <state x="86" y="130" key="com.intellij.openapi.editor.actions.MultiplePasteAction$ClipboardContentChooser/0.0.1920.1040/1920.0.1920.1040@0.0.1920.1040" timestamp="1605939138594" />
-    <state x="777" y="434" key="com.intellij.openapi.vcs.update.UpdateOrStatusOptionsDialogupdate-v2" timestamp="1605993051246">
+    <state x="777" y="434" key="com.intellij.openapi.vcs.update.UpdateOrStatusOptionsDialogupdate-v2" timestamp="1605996363682">
       <screen x="0" y="0" width="1920" height="1040" />
     </state>
-    <state x="777" y="434" key="com.intellij.openapi.vcs.update.UpdateOrStatusOptionsDialogupdate-v2/0.0.1920.1040/1920.0.1920.1040@0.0.1920.1040" timestamp="1605993051246" />
+    <state x="777" y="434" key="com.intellij.openapi.vcs.update.UpdateOrStatusOptionsDialogupdate-v2/0.0.1920.1040/1920.0.1920.1040@0.0.1920.1040" timestamp="1605996363682" />
     <state x="415" y="261" width="585" height="534" key="find.popup" timestamp="1605936971606">
       <screen x="0" y="0" width="1920" height="1040" />
     </state>

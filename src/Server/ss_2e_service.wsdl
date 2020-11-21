@@ -11,21 +11,6 @@
 
       <s:schema elementFormDefault="qualified" targetNamespace="http://www.examples.com/wsdl/MyService.wsdl">
 
-         <s:element name="AllTagsSoapRequest">
-            <s:complexType>
-               <s:sequence>
-               </s:sequence>
-            </s:complexType>
-         </s:element>
-
-         <s:element name="AllTagsSoapResponse">
-            <s:complexType>
-               <s:sequence>
-                  <s:element maxOccurs="unbounded" name="tag"/>
-               </s:sequence>
-            </s:complexType>
-         </s:element>
-
          <s:element name="allStudentsRequest">
             <s:complexType>
                <s:sequence>
@@ -34,13 +19,6 @@
          </s:element>
 
          <s:element name="allStudentsResponse">
-            <!--
-            <s:complexType>
-               <s:sequence>
-                  <s:element maxOccurs="unbounded" name="tag"/>
-               </s:sequence>
-            </s:complexType>
-            -->
             <xsd:complexType name='studentList'>
                <xsd:complexContent mixed='false'>
                   <xsd:restriction base='soapenc:Array'>
@@ -99,14 +77,6 @@
 
    </wsdl:types>
 
-   <wsdl:message name = "tagsRequest">
-      <wsdl:part name="parameters" element="tns:AllTagsSoapRequest"/>
-   </wsdl:message>
-
-   <wsdl:message name = "tagsResponse">
-      <wsdl:part name="parameters" element="tns:AllTagsSoapResponse"/>
-   </wsdl:message>
-
    <wsdl:message name = "administrativesRequest">
       <wsdl:part name="parameters" element="tns:allAdministrativesRequest"/>
    </wsdl:message>
@@ -114,27 +84,6 @@
    <wsdl:message name = "administrativesResponse">
       <wsdl:part name="parameters" element="tns:allAdministrativesResponse"/>
    </wsdl:message>
-
-   <wsdl:portType name = "port">
-      <wsdl:operation name = "tags">
-         <wsdl:input message = "tns:tagsRequest"/>
-         <wsdl:output message = "tns:tagsResponse"/>
-      </wsdl:operation>
-
-      <wsdl:operation name = "students">
-         <wsdl:input message = "tns:studentsRequest"/>
-         <wsdl:output message = "tns:studentsResponse"/>
-      </wsdl:operation>
-
-      <wsdl:operation name = "teachers">
-         <wsdl:input message = "tns:teachersRequest"/>
-         <wsdl:output message = "tns:teachersResponse"/>
-      </wsdl:operation>
-      <wsdl:operation name = "administratives">
-         <wsdl:input message = "tns:administrativesRequest"/>
-         <wsdl:output message = "tns:administrativesResponse"/>
-      </wsdl:operation>
-   </wsdl:portType>
 
    <!--Definitions Students-->
    <wsdl:message name = "studentsRequest">
@@ -154,21 +103,26 @@
       <wsdl:part name="parameters" element="tns:allTeachersResponse"/>
    </wsdl:message>
 
+   <wsdl:portType name = "port">
+
+      <wsdl:operation name = "students">
+         <wsdl:input message = "tns:studentsRequest"/>
+         <wsdl:output message = "tns:studentsResponse"/>
+      </wsdl:operation>
+
+      <wsdl:operation name = "teachers">
+         <wsdl:input message = "tns:teachersRequest"/>
+         <wsdl:output message = "tns:teachersResponse"/>
+      </wsdl:operation>
+      <wsdl:operation name = "administratives">
+         <wsdl:input message = "tns:administrativesRequest"/>
+         <wsdl:output message = "tns:administrativesResponse"/>
+      </wsdl:operation>
+   </wsdl:portType>
 
    <!--General Binding-->
    <wsdl:binding name = "ss_2e_Binding" type = "tns:port">
       <soap:binding transport="http://schemas.xmlsoap.org/soap/http"/>
-
-      <wsdl:operation name = "tags">
-         <soap:operation soapAction = "tags" style="document"/>
-
-         <wsdl:input>
-            <soap:body use="literal"/>
-         </wsdl:input>
-         <wsdl:output>
-            <soap:body use="literal"/>
-         </wsdl:output>
-      </wsdl:operation>
 
       <!--Function Students-->
       <wsdl:operation name = "students">

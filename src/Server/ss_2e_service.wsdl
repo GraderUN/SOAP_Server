@@ -68,7 +68,7 @@
    </wsdl:message>
 
 
-   <wsdl:portType name = "port">
+   <wsdl:portType name = "port2">
       <wsdl:operation name = "students">
          <wsdl:input message = "tns:studentsRequest"/>
          <wsdl:output message = "tns:studentsResponse"/>

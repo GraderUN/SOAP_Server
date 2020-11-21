@@ -43,7 +43,6 @@
          <s:element name="allAdministrativesRequest">
             <s:complexType>
                <s:sequence>
-                  <s:element name = "idTag" type = "s:string"/>
                </s:sequence>
             </s:complexType>
          </s:element>

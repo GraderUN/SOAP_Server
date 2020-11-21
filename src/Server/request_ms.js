@@ -1,6 +1,6 @@
-
 const gql = require('graphql-tag');
 const fetch = require('node-fetch');
+const { ApolloClient } = require("apollo-client");
 //import ApolloClient from 'apollo-boost';
 //import { ApolloClient, InMemoryCache } from '@apollo/client';
 /*
@@ -15,35 +15,39 @@ let baseUrlFeedMs = `http://${serverData.feed_url}/${serverData.feed_entryPoint}
 let baseUrlLabelsMs = `http://${serverData.labels_url}/${serverData.labels_entryPoint}`;
 let gateway = `http://localhost:5000/`;
 
-async function getAllAdmins(id){
+
+
+async function getAllAdmins(){
     let url = gateway;
 
     let requestOptions = {
         apollo: {
-            administrativoById: gql`
-                query($id: Int!){
-                    administrativoById(id: $id){
+            allAdministrativos: gql`
+                query{
+                    allAdministrativos{
                         id
                         nombre
                         apellido
                         edad
-                        telefono
-                        email
                     }
                 }
             `
         }
     };
-
+    console.log('entra')
+    console.log(ApolloClient)
     const response = await fetch(url, requestOptions)
         .then(response => {
+            console.log('entraResp')
             return{
                 status: response.status,
                 body: response.json()
             }
         })
-        .then(response => {return response;});
-
+        .then(response => {
+            console.log('entraResp2')
+            return response;
+        });
     return {
         status:response.status,
         body: (await response.body)

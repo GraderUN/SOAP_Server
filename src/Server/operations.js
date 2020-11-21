@@ -21,9 +21,8 @@ async function getStudents(args){
         return "correcto";
 }
 
-async function getAdministratives(args) {
-    let id = args;
-    let response = await client.getAllAdmins(id);
+async function getAdministratives() {
+    let response = await client.getAllAdmins();
     let tag = [];
     if(response.status == 200) {
         response.body.forEach(element => {

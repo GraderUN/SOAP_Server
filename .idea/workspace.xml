@@ -1,0 +1,162 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project version="4">
+  <component name="BranchesTreeState">
+    <expand>
+      <path>
+        <item name="ROOT" type="e8cecc67:BranchNodeDescriptor" />
+        <item name="LOCAL_ROOT" type="e8cecc67:BranchNodeDescriptor" />
+      </path>
+      <path>
+        <item name="ROOT" type="e8cecc67:BranchNodeDescriptor" />
+        <item name="REMOTE_ROOT" type="e8cecc67:BranchNodeDescriptor" />
+      </path>
+      <path>
+        <item name="ROOT" type="e8cecc67:BranchNodeDescriptor" />
+        <item name="REMOTE_ROOT" type="e8cecc67:BranchNodeDescriptor" />
+        <item name="GROUP_NODE:origin" type="e8cecc67:BranchNodeDescriptor" />
+      </path>
+    </expand>
+    <select />
+  </component>
+  <component name="ChangeListManager">
+    <list default="true" id="2f58dad4-6f32-4317-a90c-68e5cd335ad8" name="Default Changelist" comment="Administrativos working" />
+    <option name="SHOW_DIALOG" value="false" />
+    <option name="HIGHLIGHT_CONFLICTS" value="true" />
+    <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
+    <option name="LAST_RESOLUTION" value="IGNORE" />
+  </component>
+  <component name="Git.Settings">
+    <option name="RECENT_BRANCH_BY_REPOSITORY">
+      <map>
+        <entry key="$PROJECT_DIR$" value="samoralespu" />
+      </map>
+    </option>
+    <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$" />
+  </component>
+  <component name="ProjectId" id="1kaPKb48xR7fWn2vu0QoLUu172G" />
+  <component name="ProjectViewState">
+    <option name="hideEmptyMiddlePackages" value="true" />
+    <option name="showLibraryContents" value="true" />
+  </component>
+  <component name="PropertiesComponent">
+    <property name="RunOnceActivity.OpenProjectViewOnStart" value="true" />
+    <property name="WebServerToolWindowFactoryState" value="false" />
+    <property name="last_opened_file_path" value="$PROJECT_DIR$" />
+    <property name="nodejs_package_manager_path" value="npm" />
+    <property name="vue.rearranger.settings.migration" value="true" />
+  </component>
+  <component name="SpellCheckerSettings" RuntimeDictionaries="0" Folders="0" CustomDictionaries="0" DefaultDictionary="application-level" UseSingleDictionary="true" transferred="true" />
+  <component name="TaskManager">
+    <task active="true" id="Default" summary="Default task">
+      <changelist id="2f58dad4-6f32-4317-a90c-68e5cd335ad8" name="Default Changelist" comment="" />
+      <created>1605935666107</created>
+      <option name="number" value="Default" />
+      <option name="presentableId" value="Default" />
+      <updated>1605935666107</updated>
+      <workItem from="1605935667352" duration="8191000" />
+      <workItem from="1605990346050" duration="4024000" />
+    </task>
+    <task id="LOCAL-00001" summary="Trying gateway">
+      <created>1605940799784</created>
+      <option name="number" value="00001" />
+      <option name="presentableId" value="LOCAL-00001" />
+      <option name="project" value="LOCAL" />
+      <updated>1605940799784</updated>
+    </task>
+    <task id="LOCAL-00002" summary="something">
+      <created>1605942337106</created>
+      <option name="number" value="00002" />
+      <option name="presentableId" value="LOCAL-00002" />
+      <option name="project" value="LOCAL" />
+      <updated>1605942337106</updated>
+    </task>
+    <task id="LOCAL-00003" summary="some proves">
+      <created>1605990583096</created>
+      <option name="number" value="00003" />
+      <option name="presentableId" value="LOCAL-00003" />
+      <option name="project" value="LOCAL" />
+      <updated>1605990583096</updated>
+    </task>
+    <task id="LOCAL-00004" summary="Administrativos working">
+      <created>1605992938747</created>
+      <option name="number" value="00004" />
+      <option name="presentableId" value="LOCAL-00004" />
+      <option name="project" value="LOCAL" />
+      <updated>1605992938747</updated>
+    </task>
+    <option name="localTasksCounter" value="5" />
+    <servers />
+  </component>
+  <component name="TypeScriptGeneratedFilesManager">
+    <option name="version" value="3" />
+  </component>
+  <component name="Vcs.Log.Tabs.Properties">
+    <option name="TAB_STATES">
+      <map>
+        <entry key="MAIN">
+          <value>
+            <State />
+          </value>
+        </entry>
+      </map>
+    </option>
+    <option name="oldMeFiltersMigrated" value="true" />
+  </component>
+  <component name="VcsManagerConfiguration">
+    <MESSAGE value="Trying gateway" />
+    <MESSAGE value="something" />
+    <MESSAGE value="some proves" />
+    <MESSAGE value="Administrativos working" />
+    <option name="LAST_COMMIT_MESSAGE" value="Administrativos working" />
+  </component>
+  <component name="WindowStateProjectService">
+    <state x="136" y="202" key="#Inspections" timestamp="1605938746900">
+      <screen x="0" y="0" width="1920" height="1040" />
+    </state>
+    <state x="136" y="202" key="#Inspections/0.0.1920.1040/1920.0.1920.1040@0.0.1920.1040" timestamp="1605938746900" />
+    <state x="260" y="275" key="FileChooserDialogImpl" timestamp="1605940214012">
+      <screen x="0" y="0" width="1920" height="1040" />
+    </state>
+    <state x="260" y="275" key="FileChooserDialogImpl/0.0.1920.1040/1920.0.1920.1040@0.0.1920.1040" timestamp="1605940214012" />
+    <state width="1300" height="281" key="GridCell.Tab.0.bottom" timestamp="1605994722553">
+      <screen x="0" y="0" width="1920" height="1040" />
+    </state>
+    <state width="1300" height="281" key="GridCell.Tab.0.bottom/0.0.1920.1040/1920.0.1920.1040@0.0.1920.1040" timestamp="1605994722553" />
+    <state width="1300" height="281" key="GridCell.Tab.0.center" timestamp="1605994722553">
+      <screen x="0" y="0" width="1920" height="1040" />
+    </state>
+    <state width="1300" height="281" key="GridCell.Tab.0.center/0.0.1920.1040/1920.0.1920.1040@0.0.1920.1040" timestamp="1605994722553" />
+    <state width="1300" height="281" key="GridCell.Tab.0.left" timestamp="1605994722553">
+      <screen x="0" y="0" width="1920" height="1040" />
+    </state>
+    <state width="1300" height="281" key="GridCell.Tab.0.left/0.0.1920.1040/1920.0.1920.1040@0.0.1920.1040" timestamp="1605994722553" />
+    <state width="1300" height="281" key="GridCell.Tab.0.right" timestamp="1605994722553">
+      <screen x="0" y="0" width="1920" height="1040" />
+    </state>
+    <state width="1300" height="281" key="GridCell.Tab.0.right/0.0.1920.1040/1920.0.1920.1040@0.0.1920.1040" timestamp="1605994722553" />
+    <state x="214" y="109" key="MergeDialog" timestamp="1605991329824">
+      <screen x="0" y="0" width="1920" height="1040" />
+    </state>
+    <state x="214" y="109" key="MergeDialog/0.0.1920.1040/1920.0.1920.1040@0.0.1920.1040" timestamp="1605991329824" />
+    <state x="896" y="285" key="MultipleFileMergeDialog" timestamp="1605991329831">
+      <screen x="0" y="0" width="1920" height="1040" />
+    </state>
+    <state x="896" y="285" key="MultipleFileMergeDialog/0.0.1920.1040/1920.0.1920.1040@0.0.1920.1040" timestamp="1605991329831" />
+    <state x="552" y="253" key="Vcs.Push.Dialog.v2" timestamp="1605993222302">
+      <screen x="0" y="0" width="1920" height="1040" />
+    </state>
+    <state x="552" y="253" key="Vcs.Push.Dialog.v2/0.0.1920.1040/1920.0.1920.1040@0.0.1920.1040" timestamp="1605993222302" />
+    <state x="86" y="130" key="com.intellij.openapi.editor.actions.MultiplePasteAction$ClipboardContentChooser" timestamp="1605939138594">
+      <screen x="0" y="0" width="1920" height="1040" />
+    </state>
+    <state x="86" y="130" key="com.intellij.openapi.editor.actions.MultiplePasteAction$ClipboardContentChooser/0.0.1920.1040/1920.0.1920.1040@0.0.1920.1040" timestamp="1605939138594" />
+    <state x="777" y="434" key="com.intellij.openapi.vcs.update.UpdateOrStatusOptionsDialogupdate-v2" timestamp="1605993051246">
+      <screen x="0" y="0" width="1920" height="1040" />
+    </state>
+    <state x="777" y="434" key="com.intellij.openapi.vcs.update.UpdateOrStatusOptionsDialogupdate-v2/0.0.1920.1040/1920.0.1920.1040@0.0.1920.1040" timestamp="1605993051246" />
+    <state x="415" y="261" width="585" height="534" key="find.popup" timestamp="1605936971606">
+      <screen x="0" y="0" width="1920" height="1040" />
+    </state>
+    <state x="415" y="261" width="585" height="534" key="find.popup/0.0.1920.1040/1920.0.1920.1040@0.0.1920.1040" timestamp="1605936971606" />
+  </component>
+</project>

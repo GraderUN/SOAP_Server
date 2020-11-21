@@ -25,20 +25,22 @@ async function getAdministratives(args) {
     let id = args;
     let response = await client.getAllAdmins(id);
     let tag = [];
-
-    response.body.forEach(element => {
-        tag.push({
-            id: element.id,
-            nombre: element.nombre,
-            apellido: element.apellido,
-            edad: element.edad
+    if(response.status == 200) {
+        response.body.forEach(element => {
+            tag.push({
+                id: element.id,
+                nombre: element.nombre,
+                apellido: element.apellido,
+                edad: element.edad
+            });
         });
-    });
+    }
 
     return{
         tag: tag
     }
 }
+
 module.exports = {
     prueba,
     getStudents,

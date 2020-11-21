@@ -1,43 +1,59 @@
 <wsdl:definitions
-    targetNamespace="http://www.examples.com/wsdl/MyService.wsdl" 
-    xmlns:s="http://www.w3.org/2001/XMLSchema" 
-    xmlns:tns="http://www.examples.com/wsdl/MyService.wsdl" 
-    xmlns:soap="http://schemas.xmlsoap.org/wsdl/soap/" 
-    xmlns:wsdl="http://schemas.xmlsoap.org/wsdl/">
+        targetNamespace="http://www.examples.com/wsdl/MyService.wsdl"
+        xmlns:s="http://www.w3.org/2001/XMLSchema"
+        xmlns:tns="http://www.examples.com/wsdl/MyService.wsdl"
+        xmlns:soap="http://schemas.xmlsoap.org/wsdl/soap/"
+        xmlns:wsdl="http://schemas.xmlsoap.org/wsdl/">
 
-    <!-- WSDL TYPES: definition of the data types that are used in the web service -->
+   <!-- WSDL TYPES: definition of the data types that are used in the web service -->
    <wsdl:types>
 
       <s:schema elementFormDefault="qualified" targetNamespace="http://www.examples.com/wsdl/MyService.wsdl">
 
          <s:element name="AllTagsSoapRequest">
-         <s:complexType>
-            <s:sequence>
-            </s:sequence>
-         </s:complexType>
+            <s:complexType>
+               <s:sequence>
+               </s:sequence>
+            </s:complexType>
          </s:element>
 
          <s:element name="AllTagsSoapResponse">
-         <s:complexType>
-            <s:sequence>
-               <s:element maxOccurs="unbounded" name="tag"/>
-            </s:sequence>
-         </s:complexType>
+            <s:complexType>
+               <s:sequence>
+                  <s:element maxOccurs="unbounded" name="tag"/>
+               </s:sequence>
+            </s:complexType>
          </s:element>
 
          <s:element name="allStudentsRequest">
-         <s:complexType>
-            <s:sequence>
-            </s:sequence>
-         </s:complexType>
+            <s:complexType>
+               <s:sequence>
+               </s:sequence>
+            </s:complexType>
          </s:element>
-         
+
          <s:element name="allStudentsResponse">
-         <s:complexType>
-            <s:sequence>
-               <s:element maxOccurs="unbounded" name="tag"/>
-            </s:sequence>
-         </s:complexType>
+            <s:complexType>
+               <s:sequence>
+                  <s:element maxOccurs="unbounded" name="tag"/>
+               </s:sequence>
+            </s:complexType>
+         </s:element>
+
+         <s:element name="allAdministrativesRequest">
+            <s:complexType>
+               <s:sequence>
+                  <s:element name = "idTag" type = "s:string"/>
+               </s:sequence>
+            </s:complexType>
+         </s:element>
+
+         <s:element name="allAdministrativesResponse">
+            <s:complexType>
+               <s:sequence>
+                  <s:element maxOccurs="unbounded" name="url" type="s:string"/>
+               </s:sequence>
+            </s:complexType>
          </s:element>
       </s:schema>
 
@@ -50,16 +66,28 @@
    <wsdl:message name = "tagsResponse">
       <wsdl:part name="parameters" element="tns:AllTagsSoapResponse"/>
    </wsdl:message>
-   
+
+   <wsdl:message name = "administrativesRequest">
+      <wsdl:part name="parameters" element="tns:allAdministrativesRequest"/>
+   </wsdl:message>
+
+   <wsdl:message name = "administrativesResponse">
+      <wsdl:part name="parameters" element="tns:allAdministrativesResponse"/>
+   </wsdl:message>
+
    <wsdl:portType name = "port">
       <wsdl:operation name = "tags">
          <wsdl:input message = "tns:tagsRequest"/>
          <wsdl:output message = "tns:tagsResponse"/>
       </wsdl:operation>
+      <wsdl:operation name = "administratives">
+         <wsdl:input message = "tns:administrativesRequest"/>
+         <wsdl:output message = "tns:administrativesResponse"/>
+      </wsdl:operation>
    </wsdl:portType>
 
    <!--Definitions Students-->
-   <wsdl:message name = "studentsRequest">   
+   <wsdl:message name = "studentsRequest">
       <wsdl:part name="parameters" element="tns:allStudentsRequest"/>
    </wsdl:message>
 
@@ -74,6 +102,9 @@
          <wsdl:output message = "tns:studentsResponse"/>
       </wsdl:operation>
    </wsdl:portType>
+
+   <!--Definitions Administratives-->
+
 
 
    <!--General Binding-->
@@ -102,7 +133,17 @@
             <soap:body use="literal"/>
          </wsdl:output>
       </wsdl:operation>
-      
+
+      <wsdl:operation name = "administratives">
+         <soap:operation soapAction = "administratives" style="document"/>
+
+         <wsdl:input>
+            <soap:body use="literal"/>
+         </wsdl:input>
+         <wsdl:output>
+            <soap:body use="literal"/>
+         </wsdl:output>
+      </wsdl:operation>
    </wsdl:binding>
 
    <wsdl:service name = "ss_2e">

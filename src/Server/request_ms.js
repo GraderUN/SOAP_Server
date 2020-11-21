@@ -1,5 +1,5 @@
-import gql from "graphql-tag";
 
+const gql = require('graphql-tag');
 const fetch = require('node-fetch');
 //import ApolloClient from 'apollo-boost';
 //import { ApolloClient, InMemoryCache } from '@apollo/client';

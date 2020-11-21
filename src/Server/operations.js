@@ -33,7 +33,6 @@ async function getStudents(args) {
     const result = await client.query({
       query,
     });
-    console.log(result.data);
     result.data.allEstudiantes.forEach((element) => {
       let temp = {
         id: element.id,
@@ -82,8 +81,45 @@ async function getTeachers(args) {
     res.sendStatus(500).send(JSON.stringify(err));
   }
 }
+
+async function getAdministratives() {1
+    let res = [];
+    const query = gql`
+        query allAdministrativos{
+            allAdministrativos {
+                id
+                nombre
+                apellido
+                edad
+            }
+        }
+    `;
+
+    try {
+        const result = await client.query({
+            query,
+        });
+        result.data.allAdministrativos.forEach((element) => {
+            let temp = {
+                id: element.id,
+                nombre: element.nombre,
+                apellido: element.apellido,
+                edad: element.edad
+            };
+            res.push(temp);
+        });
+
+        return res;
+    } catch (err) {
+        console.log(err);
+        res.sendStatus(500).send(JSON.stringify(err));
+    }
+
+}
+
 module.exports = {
   prueba,
   getStudents,
-  getTeachers
+  getTeachers,
+    getAdministratives
 };

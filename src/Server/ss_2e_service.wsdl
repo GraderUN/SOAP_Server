@@ -19,20 +19,20 @@
          </s:element>
 
          <s:element name="allStudentsResponse">
-            <xsd:complexType name='studentList'>
-               <xsd:complexContent mixed='false'>
-                  <xsd:restriction base='soapenc:Array'>
-                     <xsd:attribute wsdl:arrayType='studentList[]' ref='soapenc:arrayType' />
-                  </xsd:restriction>
-               </xsd:complexContent>
-            </xsd:complexType>
-            <xsd:complexType name='student'>
+            <s:complexType name='studentList'>
+               <s:complexContent mixed='false'>
+                  <s:restriction base='soapenc:Array'>
+                     <s:attribute wsdl:arrayType='studentList[]' ref='soapenc:arrayType' />
+                  </s:restriction>
+               </s:complexContent>
+            </s:complexType>
+            <s:complexType name='student'>
                <s:sequence>
-                  <xsd:element minOccurs='0' maxOccurs='1' name='id' type='xsd:id'/>
-                  <xsd:element minOccurs='0' maxOccurs='1' name='nombre' type='xsd:string'/>
-                  <xsd:element minOccurs='0' maxOccurs='1' name='apellido' type='xsd:string'/>
+                  <s:element minOccurs='0' maxOccurs='1' name='id' type='xsd:id'/>
+                  <s:element minOccurs='0' maxOccurs='1' name='nombre' type='xsd:string'/>
+                  <s:element minOccurs='0' maxOccurs='1' name='apellido' type='xsd:string'/>
                </s:sequence>
-            </xsd:complexType>
+            </s:complexType>
          </s:element>
 
          <s:element name="allTeachersRequest">
@@ -43,20 +43,20 @@
          </s:element>
 
          <s:element name="allTeachersResponse">
-            <xsd:complexType name='teacherList'>
-               <xsd:complexContent mixed='false'>
+            <s:complexType name='teacherList'>
+               <s:complexContent mixed='false'>
                   <xsd:restriction base='soapenc:Array'>
                      <xsd:attribute wsdl:arrayType='teacherList[]' ref='soapenc:arrayType' />
                   </xsd:restriction>
-               </xsd:complexContent>
-            </xsd:complexType>
-            <xsd:complexType name='teacher'>
+               </s:complexContent>
+            </s:complexType>
+            <s:complexType name='teacher'>
                <s:sequence>
-                  <xsd:element minOccurs='0' maxOccurs='1' name='id' type='xsd:id'/>
-                  <xsd:element minOccurs='0' maxOccurs='1' name='nombre' type='xsd:string'/>
-                  <xsd:element minOccurs='0' maxOccurs='1' name='apellido' type='xsd:string'/>
+                  <s:element minOccurs='0' maxOccurs='1' name='id' type='xsd:id'/>
+                  <s:element minOccurs='0' maxOccurs='1' name='nombre' type='xsd:string'/>
+                  <s:element minOccurs='0' maxOccurs='1' name='apellido' type='xsd:string'/>
                </s:sequence>
-            </xsd:complexType>
+            </s:complexType>
          </s:element>
 
          <s:element name="allAdministrativesRequest">
@@ -67,21 +67,21 @@
          </s:element>
 
          <s:element name="allAdministrativesResponse">
-            <xsd:complexType name='AdministrativesList'>
-               <xsd:complexContent mixed='false'>
+            <s:complexType name='AdministrativesList'>
+               <s:complexContent mixed='false'>
                   <xsd:restriction base='soapenc:Array'>
                      <xsd:attribute wsdl:arrayType='AdministrativesList[]' ref='soapenc:arrayType' />
                   </xsd:restriction>
-               </xsd:complexContent>
-            </xsd:complexType>
-            <xsd:complexType name='teacher'>
+               </s:complexContent>
+            </s:complexType>
+            <s:complexType name='teacher'>
                <s:sequence>
                   <xsd:element minOccurs='0' maxOccurs='1' name='id' type='xsd:id'/>
                   <xsd:element minOccurs='0' maxOccurs='1' name='nombre' type='xsd:string'/>
                   <xsd:element minOccurs='0' maxOccurs='1' name='apellido' type='xsd:string'/>
                   <xsd:element minOccurs='0' maxOccurs='1' name='edad' type='xsd:int'/>
                </s:sequence>
-            </xsd:complexType>
+            </s:complexType>
          </s:element>
       </s:schema>
 

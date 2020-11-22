@@ -19,10 +19,9 @@
     <select />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="2f58dad4-6f32-4317-a90c-68e5cd335ad8" name="Default Changelist" comment="fixed url">
+    <list default="true" id="2f58dad4-6f32-4317-a90c-68e5cd335ad8" name="Default Changelist" comment="Fixed wsdl">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/Server/index.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/Server/index.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/Server/operations.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/Server/operations.js" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/Server/ss_2e_service.wsdl" beforeDir="false" afterPath="$PROJECT_DIR$/src/Server/ss_2e_service.wsdl" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
@@ -63,7 +62,8 @@
       <workItem from="1605996354298" duration="153000" />
       <workItem from="1605996763432" duration="894000" />
       <workItem from="1606081703654" duration="754000" />
-      <workItem from="1606084787076" duration="305000" />
+      <workItem from="1606084787076" duration="481000" />
+      <workItem from="1606085591328" duration="678000" />
     </task>
     <task id="LOCAL-00001" summary="Trying gateway">
       <created>1605940799784</created>
@@ -121,7 +121,14 @@
       <option name="project" value="LOCAL" />
       <updated>1606081991214</updated>
     </task>
-    <option name="localTasksCounter" value="9" />
+    <task id="LOCAL-00009" summary="Fixed wsdl">
+      <created>1606085118594</created>
+      <option name="number" value="00009" />
+      <option name="presentableId" value="LOCAL-00009" />
+      <option name="project" value="LOCAL" />
+      <updated>1606085118594</updated>
+    </task>
+    <option name="localTasksCounter" value="10" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -148,7 +155,8 @@
     <MESSAGE value="Fixed and merged all" />
     <MESSAGE value="Fixed administratives wsdl" />
     <MESSAGE value="fixed url" />
-    <option name="LAST_COMMIT_MESSAGE" value="fixed url" />
+    <MESSAGE value="Fixed wsdl" />
+    <option name="LAST_COMMIT_MESSAGE" value="Fixed wsdl" />
   </component>
   <component name="WindowStateProjectService">
     <state x="136" y="202" key="#Inspections" timestamp="1605938746900">
@@ -183,10 +191,10 @@
       <screen x="0" y="0" width="1920" height="1040" />
     </state>
     <state x="596" y="325" key="MultipleFileMergeDialog/0.0.1920.1040/1920.0.1920.1040@0.0.1920.1040" timestamp="1605996458062" />
-    <state x="552" y="253" key="Vcs.Push.Dialog.v2" timestamp="1606081998077">
+    <state x="552" y="253" key="Vcs.Push.Dialog.v2" timestamp="1606085149667">
       <screen x="0" y="0" width="1920" height="1040" />
     </state>
-    <state x="552" y="253" key="Vcs.Push.Dialog.v2/0.0.1920.1040/1920.0.1920.1040@0.0.1920.1040" timestamp="1606081998077" />
+    <state x="552" y="253" key="Vcs.Push.Dialog.v2/0.0.1920.1040/1920.0.1920.1040@0.0.1920.1040" timestamp="1606085149667" />
     <state x="86" y="130" key="com.intellij.openapi.editor.actions.MultiplePasteAction$ClipboardContentChooser" timestamp="1605939138594">
       <screen x="0" y="0" width="1920" height="1040" />
     </state>
@@ -195,9 +203,9 @@
       <screen x="0" y="0" width="1920" height="1040" />
     </state>
     <state x="777" y="434" key="com.intellij.openapi.vcs.update.UpdateOrStatusOptionsDialogupdate-v2/0.0.1920.1040/1920.0.1920.1040@0.0.1920.1040" timestamp="1606081753878" />
-    <state x="415" y="261" width="585" height="534" key="find.popup" timestamp="1605936971606">
+    <state x="789" y="312" width="585" height="534" key="find.popup" timestamp="1606085944470">
       <screen x="0" y="0" width="1920" height="1040" />
     </state>
-    <state x="415" y="261" width="585" height="534" key="find.popup/0.0.1920.1040/1920.0.1920.1040@0.0.1920.1040" timestamp="1605936971606" />
+    <state x="789" y="312" width="585" height="534" key="find.popup/0.0.1920.1040/1920.0.1920.1040@0.0.1920.1040" timestamp="1606085944470" />
   </component>
 </project>

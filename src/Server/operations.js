@@ -62,7 +62,6 @@ async function getTeachers(args) {
     const result = await client.query({
       query,
     });
-    console.log(result.data);
     result.data.allProfesores.forEach((element) => {
       let temp = {
         id: element.id,

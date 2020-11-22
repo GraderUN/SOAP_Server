@@ -5,7 +5,7 @@ const createHttpLink = require("apollo-link-http").createHttpLink;
 const InMemoryCache = require("apollo-cache-inmemory").InMemoryCache;
 
 const httpLink = createHttpLink({
-  uri: "http://localhost:5000/",
+  uri: " http://ec2-3-238-177-238.compute-1.amazonaws.com:5000/",
   fetch: fetch,
 });
 

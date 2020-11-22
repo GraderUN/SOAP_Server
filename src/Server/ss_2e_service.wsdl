@@ -27,11 +27,11 @@
                </xsd:complexContent>
             </xsd:complexType>
             <xsd:complexType name='student'>
-               <xsd:all>
+               <s:sequence>
                   <xsd:element minOccurs='0' maxOccurs='1' name='id' type='xsd:id'/>
                   <xsd:element minOccurs='0' maxOccurs='1' name='nombre' type='xsd:string'/>
                   <xsd:element minOccurs='0' maxOccurs='1' name='apellido' type='xsd:string'/>
-               </xsd:all>
+               </s:sequence>
             </xsd:complexType>
          </s:element>
 
@@ -51,11 +51,11 @@
                </xsd:complexContent>
             </xsd:complexType>
             <xsd:complexType name='teacher'>
-               <xsd:all>
+               <s:sequence>
                   <xsd:element minOccurs='0' maxOccurs='1' name='id' type='xsd:id'/>
                   <xsd:element minOccurs='0' maxOccurs='1' name='nombre' type='xsd:string'/>
                   <xsd:element minOccurs='0' maxOccurs='1' name='apellido' type='xsd:string'/>
-               </xsd:all>
+               </s:sequence>
             </xsd:complexType>
          </s:element>
 
@@ -75,12 +75,12 @@
                </xsd:complexContent>
             </xsd:complexType>
             <xsd:complexType name='teacher'>
-               <xsd:all>
+               <s:sequence>
                   <xsd:element minOccurs='0' maxOccurs='1' name='id' type='xsd:id'/>
                   <xsd:element minOccurs='0' maxOccurs='1' name='nombre' type='xsd:string'/>
                   <xsd:element minOccurs='0' maxOccurs='1' name='apellido' type='xsd:string'/>
                   <xsd:element minOccurs='0' maxOccurs='1' name='edad' type='xsd:int'/>
-               </xsd:all>
+               </s:sequence>
             </xsd:complexType>
          </s:element>
       </s:schema>

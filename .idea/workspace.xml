@@ -63,7 +63,7 @@
       <workItem from="1605996763432" duration="894000" />
       <workItem from="1606081703654" duration="754000" />
       <workItem from="1606084787076" duration="481000" />
-      <workItem from="1606085591328" duration="678000" />
+      <workItem from="1606085591328" duration="1760000" />
     </task>
     <task id="LOCAL-00001" summary="Trying gateway">
       <created>1605940799784</created>
@@ -128,7 +128,14 @@
       <option name="project" value="LOCAL" />
       <updated>1606085118594</updated>
     </task>
-    <option name="localTasksCounter" value="10" />
+    <task id="LOCAL-00010" summary="Fixed wsdl">
+      <created>1606086484823</created>
+      <option name="number" value="00010" />
+      <option name="presentableId" value="LOCAL-00010" />
+      <option name="project" value="LOCAL" />
+      <updated>1606086484823</updated>
+    </task>
+    <option name="localTasksCounter" value="11" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -191,10 +198,10 @@
       <screen x="0" y="0" width="1920" height="1040" />
     </state>
     <state x="596" y="325" key="MultipleFileMergeDialog/0.0.1920.1040/1920.0.1920.1040@0.0.1920.1040" timestamp="1605996458062" />
-    <state x="552" y="253" key="Vcs.Push.Dialog.v2" timestamp="1606085149667">
+    <state x="552" y="253" key="Vcs.Push.Dialog.v2" timestamp="1606086487095">
       <screen x="0" y="0" width="1920" height="1040" />
     </state>
-    <state x="552" y="253" key="Vcs.Push.Dialog.v2/0.0.1920.1040/1920.0.1920.1040@0.0.1920.1040" timestamp="1606085149667" />
+    <state x="552" y="253" key="Vcs.Push.Dialog.v2/0.0.1920.1040/1920.0.1920.1040@0.0.1920.1040" timestamp="1606086487095" />
     <state x="86" y="130" key="com.intellij.openapi.editor.actions.MultiplePasteAction$ClipboardContentChooser" timestamp="1605939138594">
       <screen x="0" y="0" width="1920" height="1040" />
     </state>

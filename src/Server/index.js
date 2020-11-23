@@ -5,8 +5,8 @@ const fs = require('fs');
 const bodyParser = require('body-parser');
 const ss_2e = require('./service');
 
-var xml = fs.readFileSync('./ss_2e_service.wsdl', 'utf8');
-//var xml = fs.readFileSync('./src/Server/ss_2e_service.wsdl', 'utf8');
+//var xml = fs.readFileSync('./ss_2e_service.wsdl', 'utf8');
+var xml = fs.readFileSync('./src/Server/ss_2e_service.wsdl', 'utf8');
 
 let soap_server = express();
 soap_server.use(bodyParser.raw({ type: function() { return true; }, limit: '5mb' }));

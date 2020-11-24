@@ -7,11 +7,14 @@ async function getAllPuntctuation(req, res){
 
     //Llamando a la funcion del cliente soap
     let response = await CLIENT.getPuntajes();
-    //let llaves = response.keys();
-    let ranking = []
-    for(k in response){
-        ranking.push(response[k])
-    }
+    // console.log(response);
+
+    // //let llaves = response.keys();
+    // let ranking = []
+    // for(k in response){
+    //     ranking.push(response[k])
+    // }
+    ranking = response.user.user;
     ranking.sort(function(a, b){
         return b.puntaje - a.puntaje;
     });

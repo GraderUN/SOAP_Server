@@ -4,7 +4,7 @@ const soap = require('soap');
 //Consumiendo funcion ejemplo Soap
 async function getPuntajes() {
 
-    const client = await soap.createClientAsync('http://3.236.118.165:8001/wsdl?wsdl');
+    const client = await soap.createClientAsync('http://3.236.12.226:8001/wsdl?wsdl');
 
     let puntajes = () => {
         return new Promise(resolve => {

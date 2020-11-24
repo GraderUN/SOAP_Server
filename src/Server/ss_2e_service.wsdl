@@ -171,7 +171,7 @@
 
    <wsdl:service name = "ss_2e">
       <wsdl:port name = "functions" binding = "tns:ss_2e_Binding">
-         <soap:address location = "http://ec2-3-238-177-238.compute-1.amazonaws.com:8000/ss_2e" />
+         <soap:address location = "http://18.233.87.39:8000/ss_2e" />
       </wsdl:port>
    </wsdl:service>
 
